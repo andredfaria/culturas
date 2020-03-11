@@ -43,7 +43,7 @@
 			</div> <!-- card-body.// -->
 		</div>
 	</article> <!-- card-group-item.// -->
-	
+
 	<article class="card-group-item">
 		<header class="card-header">
 			<h6 class="title">Choose type </h6>
@@ -181,6 +181,6 @@
 	</aside> <!-- col.// -->
 </div> <!-- row.// -->
 
-</div> 
+</div>
 <!--container end.//-->
 <?php include 'footer.php'?>

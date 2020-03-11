@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>culturas</title>
-</head>
-<body>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<?php include 'header.php'?>
+
+<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="css/listar.css">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="css/edit.css" rel="stylesheet" id="edit">
@@ -15,11 +8,11 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="js/edit.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container">
-    <h3>The columns titles are merged with the filters inputs thanks to the placeholders attributes</h3>
+
+    <!-- <h3>The columns titles are merged with the filters inputs thanks to the placeholders attributes</h3>
     <hr>
     <p>Inspired by this <a href="http://bootsnipp.com/snippets/featured/panel-tables-with-filter">snippet</a></p>
     <div class="row">
@@ -29,7 +22,10 @@
                 <div class="pull-right">
                     <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
                 </div>
-            </div>
+            </div> -->
+            <div class="">
+
+
             <table class="table">
                 <thead>
                     <tr class="filters">
@@ -61,9 +57,7 @@
                 </tbody>
             </table>
         </div>
+
+        </div>
     </div>
-</div>
-
-
-</body>
-</html>
+<?php include 'footer.php'?>
