@@ -1,5 +1,26 @@
+<<<<<<< HEAD
 <?php include 'header.php'?>
 <?php include 'buscarDados.php' ?>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>culturas</title>
+</head>
+<body>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/listar.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/edit.css" rel="stylesheet" id="edit">
+<script src="js/listar.jss"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/edit.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+>>>>>>> f19c0e4b0b50579637f87f489518d63f9a5d3ce1
 
 <div class="container">
     <div class="row">
