@@ -1,4 +1,6 @@
-<?php include 'header.php'?>
+<?php include 'header.php'  ?>
+<?php include 'buscarDados.php' ?>
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="css/edit.css" rel="stylesheet" id="edit">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -7,19 +9,7 @@
 <!------ Include the above in your HEAD tag ---------->
 
   <div class="main">
-
-
-      <div class="row">
-        <div class="form-group">
-          <div class="col-xs-12">
-            <button type="submit" class="btn btn-default">Save</button>
-            <button type="close" class="btn btn-default">Close</button>
-            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-          </div>
-
-        </div>
-
-      </div>
+    </div>
       <div class="row">
         <div class="col-xs-12 col-lg-7">
           <div class="panel panel-primary">
@@ -29,7 +19,7 @@
               </div>
             </div>
             <div class="panel-body">
-              <form class="form-horizontal">
+              <form action="salvarDados.php" method="POST" class="form-horizontal">
                 <div class="row">
                   <div class=" col-xs-12 col-sm-3 col-lg-2 text-center pull-right">
                     <img src="http://placehold.it/100x100" alt="..." class="img-rounded">
@@ -84,11 +74,11 @@
                     </div>
                   </div>
                 </div>
+                <div class="row text-center">
+                  <input type="submit" class="btn btn-success" value="Salvar">
+                  <button type="button" class="btn btn-danger">Cancelar</button>
+                </div>
               </form>
-              <div class="row text-center">
-                <button type="button" class="btn btn-default">Reset Password</button>
-                <button type="button" class="btn btn-default">Manage Services</button>
-              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 <?php include 'header.php'?>
+<?php include 'buscarDados.php' ?>
 
 <div class="container">
     <div class="row">
@@ -8,30 +9,22 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Primeiro</th>
-                    <th scope="col">Último</th>
-                    <th scope="col">Nickname</th>
+                    <th scope="col">nome</th>
+                    <th scope="col">descricao</th>
+                    <th scope="col">valor</th>
+                    <th scope="col">tempo</th>
                   </tr>
                 </thead>
                 <tbody>
+                <?php while($linha = mysqli_fetch_array($consulta)){ ?>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td><?= $linha['id'] ?></td>
+                    <td><?= $linha['nome'] ?></td>
+                    <td><?= $linha['descricao'] ?></td>
+                    <td>R$ <?= $linha['valorMedio'] ?>,00</td>
+                    <td><?= $linha['tempoDeColheitaEmDia']?> dias</td>
                   </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
+                <?php } ?>
                 </tbody>
               </table>
             </div>
