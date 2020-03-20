@@ -1,9 +1,5 @@
 <?php include 'config.php'?>
 <?php include 'header.php'?>
-<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
 
 
 <div class="container">
@@ -28,24 +24,24 @@
 				  <span class="form-check-label">
 				    Mersedes Benz
 				  </span>
-				</label> <!-- form-check.// -->
+				</label> 
 				<label class="form-check">
 				  <input class="form-check-input" type="checkbox" value="">
 				  <span class="form-check-label">
 				    Nissan Altima
 				  </span>
-				</label>  <!-- form-check.// -->
+				</label>  
 				<label class="form-check">
 				  <input class="form-check-input" type="checkbox" value="">
 				  <span class="form-check-label">
 				    Another Brand
 				  </span>
-				</label>  <!-- form-check.// -->
+				</label>  
 			</form>
 
-			</div> <!-- card-body.// -->
+			</div> 
 		</div>
-	</article> <!-- card-group-item.// -->
+	</article> 
 
 	<article class="card-group-item">
 		<header class="card-header">
@@ -71,15 +67,15 @@
 			    Some other option
 			  </span>
 			</label>
-			</div> <!-- card-body.// -->
+			</div> 
 		</div>
-	</article> <!-- card-group-item.// -->
-</div> <!-- card.// -->
+	</article> 
+</div> 
 
 
 
 
-	</aside> <!-- col.// -->
+	</aside> 
 	<aside class="col-sm-4">
 <p>Filter 2</p>
 
@@ -93,9 +89,9 @@
 			  <a href="#" class="list-group-item">Dapibus ac facilisis  <span class="float-right badge badge-light round">3</span>  </a>
 			  <a href="#" class="list-group-item">Morbi leo risus <span class="float-right badge badge-light round">32</span>  </a>
 			  <a href="#" class="list-group-item">Another item <span class="float-right badge badge-light round">12</span>  </a>
-			</div>  <!-- list-group .// -->
+			</div>  
 		</div>
-	</article> <!-- card-group-item.// -->
+	</article> 
 	<article class="card-group-item">
 		<header class="card-header"><h6 class="title">Color check</h6></header>
 		<div class="filter-content">
@@ -112,14 +108,14 @@
 				  <input class="" type="checkbox" name="myradio" value="">
 				  <span class="form-check-label">Blue</span>
 				</label>
-			</div> <!-- card-body.// -->
+			</div> 
 		</div>
-	</article> <!-- card-group-item.// -->
-</div> <!-- card.// -->
+	</article> 
+</div> 
 
 
 
-	</aside> <!-- col.// -->
+	</aside> 
 	<aside class="col-sm-4">
 <p>Filter  3</p>
 
@@ -142,9 +138,9 @@
 			  <input type="number" class="form-control" placeholder="$1,0000">
 			</div>
 			</div>
-			</div> <!-- card-body.// -->
+			</div> 
 		</div>
-	</article> <!-- card-group-item.// -->
+	</article>
 	<article class="card-group-item">
 		<header class="card-header">
 			<h6 class="title">Selection </h6>
@@ -155,13 +151,13 @@
 					<span class="float-right badge badge-light round">52</span>
 				  	<input type="checkbox" class="custom-control-input" id="Check1">
 				  	<label class="custom-control-label" for="Check1">Samsung</label>
-				</div> <!-- form-check.// -->
+				</div>
 
 				<div class="custom-control custom-checkbox">
 					<span class="float-right badge badge-light round">132</span>
 				  	<input type="checkbox" class="custom-control-input" id="Check2">
 				 	<label class="custom-control-label" for="Check2">Black berry</label>
-				</div> <!-- form-check.// -->
+				</div> 
 
 				<div class="custom-control custom-checkbox">
 					<span class="float-right badge badge-light round">17</span>
