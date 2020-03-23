@@ -49,7 +49,7 @@ CREATE TABLE `culturas` (
 
 insert  into `culturas`(`id`,`nome`,`descricao`,`valorMedio`,`tempoDeColheitaEmDia`,`inativo`) values 
 (1,'milho','milho',10,10,1),
-(2,'açucar','açucar',20,2,1),
+(2,'açucar','açucar',20,2,0),
 (3,'alface','alfaceaonsdiof asf asmdfa',10,20,1);
 
 /*Table structure for table `plantio` */
