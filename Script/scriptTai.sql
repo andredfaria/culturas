@@ -1,6 +1,6 @@
 /*
 SQLyog Professional v12.4.3 (64 bit)
-MySQL - 5.7.29-0ubuntu0.18.04.1 : Database - TAI
+MySQL - 10.1.37-MariaDB : Database - tai
 *********************************************************************
 */
 
@@ -12,9 +12,9 @@ MySQL - 5.7.29-0ubuntu0.18.04.1 : Database - TAI
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`TAI` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`tai` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `TAI`;
+USE `tai`;
 
 /*Table structure for table `colheita` */
 
@@ -25,7 +25,8 @@ CREATE TABLE `colheita` (
   `nome` varchar(255) NOT NULL,
   `data` date NOT NULL,
   `quantidade` int(11) DEFAULT NULL,
-  `lucro` float DEFAULT NULL
+  `lucro` float DEFAULT NULL,
+  `inativo` tinyint(1) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `colheita` */
@@ -40,10 +41,16 @@ CREATE TABLE `culturas` (
   `descricao` varchar(255) DEFAULT NULL,
   `valorMedio` int(255) DEFAULT NULL,
   `tempoDeColheitaEmDia` int(255) DEFAULT NULL,
+  `inativo` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`,`nome`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 /*Data for the table `culturas` */
+
+insert  into `culturas`(`id`,`nome`,`descricao`,`valorMedio`,`tempoDeColheitaEmDia`,`inativo`) values 
+(1,'milho','milho',10,10,1),
+(2,'açucar','açucar',20,2,1),
+(3,'alface','alfaceaonsdiof asf asmdfa',10,20,1);
 
 /*Table structure for table `plantio` */
 
@@ -59,20 +66,20 @@ CREATE TABLE `plantio` (
 
 /*Data for the table `plantio` */
 
-/*Table structure for table `productBacklog` */
+/*Table structure for table `productbacklog` */
 
-DROP TABLE IF EXISTS `productBacklog`;
+DROP TABLE IF EXISTS `productbacklog`;
 
-CREATE TABLE `productBacklog` (
+CREATE TABLE `productbacklog` (
   `titulo` varchar(255) DEFAULT NULL,
   `descricao` varchar(255) DEFAULT NULL,
   `tempo` varchar(255) DEFAULT NULL,
   `prioridade` enum('importante','normal','baixa') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-/*Data for the table `productBacklog` */
+/*Data for the table `productbacklog` */
 
-insert  into `productBacklog`(`titulo`,`descricao`,`tempo`,`prioridade`) values 
+insert  into `productbacklog`(`titulo`,`descricao`,`tempo`,`prioridade`) values 
 ('cadastrar uma cultura','O usuario teria que ter um local onde cafastraria uma cultura','3 horas','importante');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
