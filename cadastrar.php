@@ -3,8 +3,6 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
 <form class="form-horizontal">
   <fieldset>
     <div class="panel panel-primary">
@@ -61,7 +59,7 @@
           </div>
         </div>
 
-        <!-- Prepended text-->
+        
         <div class="form-group">
           <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
           <div class="col-md-2">
@@ -88,8 +86,7 @@
           </div>
         </div>
 
-        <!-- Prepended text-->
-        <div class="form-group">
+                <div class="form-group">
           <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
           <div class="col-md-5">
             <div class="input-group">
@@ -102,8 +99,7 @@
         </div>
 
 
-        <!-- Search input-->
-        <div class="form-group">
+                <div class="form-group">
           <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
           <div class="col-md-2">
             <input id="cep" name="cep" placeholder="Apenas números
@@ -114,7 +110,7 @@
           </div>
         </div>
 
-        <!-- Prepended text-->
+        
         <div class="form-group">
           <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
           <div class="col-md-4">
@@ -160,7 +156,7 @@
           </div>
         </div>
 
-        <!-- Select Basic -->
+        
         <div class="form-group">
           <label class="col-md-2 control-label" for="Estado Civil">Estado Civil <h11>*</h11></label>
           <div class="col-md-2">
@@ -173,8 +169,7 @@
             </select>
           </div>
 
-          <!-- Prepended checkbox -->
-
+        
           <label class="col-md-1 control-label" for="Filhos">Filhos<h11>*</h11></label>
           <div class="col-md-3">
             <div class="input-group">
