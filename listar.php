@@ -30,11 +30,7 @@
                   <td><?= $linha['tempoDeColheitaEmDia'] ?> dias</td>
                   <td>
                     <a class="btn btn-primary" 
-                       href="cadastrar.php?
-                                  nome=<?= $linha['nome'] ?>&
-                                  descricao=<?= $linha['descricao'] ?>&&
-                                  valorMedio=<?= $linha['valorMedio'] ?>&&
-                                  tempoDeColheitaEmDia=<?= $linha['tempoDeColheitaEmDia'] ?>" 
+                       href="cadastrar.php?nome=<?= $linha['nome'] ?>&descricao=<?= $linha['descricao'] ?>&valorMedio=<?=$linha['valorMedio'] ?>&tempoDeColheitaEmDia=<?= $linha['tempoDeColheitaEmDia'] ?>&id= <?= $linha['id']?>"
                        value="<?= $linha['nome'] ?>"
                        id="nome" 
                        name="nome">
