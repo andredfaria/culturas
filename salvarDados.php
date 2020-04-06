@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
 include 'config.php';
-=======
-
->>>>>>> cfc7a1e0dc3a5902edec80243d07c10e051d40fa
 
 $id = $_GET['id']; 
 $nome = $_GET['nome']; 
@@ -11,7 +7,6 @@ $descricao = $_GET['descricao'];
 $valorMedio = (int) $_GET['valorMedio']; 
 $tempoDeColheitaEmDia = (int) $_GET['tempoDeColheitaEmDia'];
 
-<<<<<<< HEAD
 if(isset($id) && $id > 0){
     $query = " UPDATE `culturas` SET `nome` = '$nome' , `descricao` = '$descricao', 
                                     `valorMedio` = $valorMedio, `tempoDeColheitaEmDia` = $tempoDeColheitaEmDia
@@ -36,5 +31,4 @@ if(mysqli_query($conexao, $query)){
    href="listar.php">
     voltar
 </a>
-=======
->>>>>>> cfc7a1e0dc3a5902edec80243d07c10e051d40fa
+
