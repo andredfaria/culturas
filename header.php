@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culturas</title>
 
@@ -30,7 +30,6 @@
         </button>
         <a class="navbar-brand" href="#">Culturas</a>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="indexx.php">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>

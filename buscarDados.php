@@ -1,7 +1,6 @@
 <?php
 include 'config.php';
-// $_POST
-// $_GET
+
 
 $query = "SELECT * FROM culturas WHERE inativo <> 1";
 

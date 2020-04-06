@@ -1,8 +1,6 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
     <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
@@ -39,7 +37,7 @@
 
 
                                 <div style="margin-top:10px" class="form-group">
-                                    <!-- Button -->
+                                   
 
                                     <div class="col-sm-12 controls">
                                       <a id="btn-login" href="#" class="btn btn-success">Login  </a>
@@ -116,7 +114,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <!-- Button -->                                        
+                                                                          
                                     <div class="col-md-offset-3 col-md-9">
                                         <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
                                         <span style="margin-left:8px;">or</span>  

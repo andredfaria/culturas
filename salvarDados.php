@@ -7,7 +7,6 @@ $descricao = $_GET['descricao'];
 $valorMedio = (int) $_GET['valorMedio']; 
 $tempoDeColheitaEmDia = (int) $_GET['tempoDeColheitaEmDia'];
 
-
 if(isset($id) && $id > 0){
     $query = " UPDATE `culturas` SET `nome` = '$nome' , `descricao` = '$descricao', 
                                     `valorMedio` = $valorMedio, `tempoDeColheitaEmDia` = $tempoDeColheitaEmDia

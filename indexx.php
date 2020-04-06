@@ -163,23 +163,18 @@
 					<span class="float-right badge badge-light round">17</span>
 				  	<input type="checkbox" class="custom-control-input" id="Check3">
 				  	<label class="custom-control-label" for="Check3">Samsung</label>
-				</div> <!-- form-check.// -->
-
+				</div> 
 				<div class="custom-control custom-checkbox">
 					<span class="float-right badge badge-light round">7</span>
 				  	<input type="checkbox" class="custom-control-input" id="Check4">
 				  	<label class="custom-control-label" for="Check4">Other Brand</label>
-				</div> <!-- form-check.// -->
-			</div> <!-- card-body.// -->
+				</div> 
+			</div> 
 		</div>
-	</article> <!-- card-group-item.// -->
-</div> <!-- card.// -->
-
-
-
-	</aside> <!-- col.// -->
-</div> <!-- row.// -->
+	</article> 
+</div> 
+	</aside> 
+</div> 
 
 </div>
-<!--container end.//-->
 <?php include 'footer.php'?>

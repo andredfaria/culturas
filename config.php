@@ -5,7 +5,7 @@
 $host = "localhost";
 $user = "dev";
 $senha = "dev";
-$bd = "TAI";
+$bd = "tai";
 
 $conexao = mysqli_connect($host, $user, $senha, $bd);
 
@@ -14,6 +14,6 @@ $conexao = mysqli_connect($host, $user, $senha, $bd);
 // }
 
 # criar tabela que esta no script.sql
-$query = "CREATE TABLE ...";
+// $query = "CREATE TABLE ...";	
 
 // $criarTabelas = mysqli_query($conexao, $query);
