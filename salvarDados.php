@@ -1,7 +1,34 @@
 <?php
-// $_POST
-// $_GET
+include 'config.php';
 
-$query = "INSERT INTO cultura ...";
+$id = $_GET['id']; 
+$nome = $_GET['nome']; 
+$descricao = $_GET['descricao']; 
+$valorMedio = (int) $_GET['valorMedio']; 
+$tempoDeColheitaEmDia = (int) $_GET['tempoDeColheitaEmDia'];
 
-// $insert = mysql_query($conexao, $query);
+
+if(isset($id) && $id > 0){
+    $query = " UPDATE `culturas` SET `nome` = '$nome' , `descricao` = '$descricao', 
+                                    `valorMedio` = $valorMedio, `tempoDeColheitaEmDia` = $tempoDeColheitaEmDia
+                                WHERE id = $id "; 
+}else{
+    $query = " INSERT INTO `culturas` (`nome`, `descricao`, `valorMedio`, `tempoDeColheitaEmDia`) 
+                VALUES ('$nome', '$descricao', $valorMedio, $tempoDeColheitaEmDia)";
+}
+
+
+var_dump($query);
+
+if(mysqli_query($conexao, $query)){
+    echo "apagado";
+
+}else{
+    echo 'Deu erro';
+}
+?>
+<?php include 'header.php' ?>
+<a class="btn-primary btn"
+   href="listar.php">
+    voltar
+</a>

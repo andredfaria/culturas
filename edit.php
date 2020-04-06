@@ -15,8 +15,7 @@
             <button type="submit" class="btn btn-default">Savar</button>
             <button type="close" class="btn btn-default">Sair</button>
             <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-          </div>
-
+          </div>  
         </div>
 
       </div>

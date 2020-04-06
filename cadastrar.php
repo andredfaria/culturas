@@ -5,10 +5,12 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<form class="form-horizontal">
+<form class="form-horizontal" action="salvarDados.php">
   <fieldset>
     <div class="panel panel-primary">
       <div class="panel-heading">Cadastro de Cliente</div>
+      <input id="id" name="id" value="<?= isset($_GET['id']) ? $_GET['id'] : "" ?>" type="hidden">
+
 
       <div class="panel-body">
         <div class="form-group">
@@ -22,9 +24,9 @@
         <div class="form-group">
           <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>
           <div class="col-md-8">
-            <input id="Nome" name="Nome" 
-                   value="<?= $_GET['nome'] ?>" 
-                   placeholder="nome" 
+            <input id="nome" name="nome" 
+                   value="<?= isset($_GET['nome']) ? $_GET['nome'] : "" ?>" 
+                   placeholder="Nome" 
                    class="form-control input-md" 
                    required="" 
                    type="text">
@@ -32,15 +34,15 @@
         </div>
 
         <div class="form-group">
-          <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>
-          <div class="col-md-2">
-            <input id="cpf" name="cpf" 
-                   placeholder="Apenas números" class="form-control input-md" 
-                   required="" type="text" maxlength="11" 
-                   pattern="[0-9]+$">
+          <label class="col-md-2 control-label" for="Descricao">Descricao <h11>*</h11></label>
+          <div class="col-md-8">
+            <input id="descricao" name="descricao" 
+                   value="<?= isset($_GET['descricao']) ? $_GET['descricao'] : "" ?>" 
+                   placeholder="Descrição" class="form-control input-md" 
+                   required="" type="text">
           </div>
 
-          <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>
+          <!-- <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>
           <div class="col-md-2">
             <input id="dtnasc" name="dtnasc" 
                    placeholder="DD/MM/AAAA" class="form-control input-md" required="" 
@@ -58,147 +60,41 @@
               <input name="sexo" id="sexo" value="masculino" type="radio">
               Masculino
             </label>
-          </div>
+          </div> -->
         </div>
 
         <!-- Prepended text-->
         <div class="form-group">
-          <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+          <label class="col-md-2 control-label" for="prependedtext">Valor Medio <h11>*</h11></label>
           <div class="col-md-2">
             <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-              <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" 
-                     required="" type="text" maxlength="13" 
-                     pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" 
-                     OnKeyPress="formatar('## #####-####', this)">
+              <input id="valorMedio" name="valorMedio" class="form-control" placeholder="R$ XX,XX" 
+                     required="" type="text" maxlength="10" 
+                     value="<?= isset($_GET['valorMedio']) ? $_GET['valorMedio'] : "" ?>" 
+                     pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" >
             </div>
           </div>
+        </div>
 
-          <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="prependedtext">Tempo De Colheita Em Dia <h11>*</h11></label>
           <div class="col-md-2">
             <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-              <input id="prependedtext" name="prependedtext" 
-                     class="form-control" 
-                     placeholder="XX XXXXX-XXXX" 
-                     type="text" maxlength="13" 
-                     pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" 
-                     OnKeyPress="formatar('## #####-####', this)">
+              <input id="tempoDeColheitaEmDia" name="tempoDeColheitaEmDia" class="form-control" placeholder="R$ XX,XX" 
+                     required="" type="text" maxlength="10" 
+                     value="<?= isset($_GET['tempoDeColheitaEmDia']) ? $_GET['tempoDeColheitaEmDia'] : "" ?>" 
+                     pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" >
             </div>
           </div>
         </div>
-
-        <!-- Prepended text-->
-        <div class="form-group">
-          <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
-          <div class="col-md-5">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-              <input id="prependedtext" name="prependedtext" class="form-control" 
-                     placeholder="email@email.com" required="" 
-                     type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Search input-->
-        <div class="form-group">
-          <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
-          <div class="col-md-2">
-            <input id="cep" name="cep" placeholder="Apenas números
-            " class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
-          </div>
-          <div class="col-md-2">
-            <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
-          </div>
-        </div>
-
-        <!-- Prepended text-->
-        <div class="form-group">
-          <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
-          <div class="col-md-4">
-            <div class="input-group">
-              <span class="input-group-addon">Rua</span>
-              <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-            </div>
-
-          </div>
-          <div class="col-md-2">
-            <div class="input-group">
-              <span class="input-group-addon">Nº <h11>*</h11></span>
-              <input id="numero" name="numero" class="form-control" placeholder="" required="" type="text">
-            </div>
-
-          </div>
-
-          <div class="col-md-3">
-            <div class="input-group">
-              <span class="input-group-addon">Bairro</span>
-              <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-            </div>
-
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="col-md-2 control-label" for="prependedtext"></label>
-          <div class="col-md-4">
-            <div class="input-group">
-              <span class="input-group-addon">Cidade</span>
-              <input id="cidade" name="cidade" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-            </div>
-
-          </div>
-
-          <div class="col-md-2">
-            <div class="input-group">
-              <span class="input-group-addon">Estado</span>
-              <input id="estado" name="estado" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Select Basic -->
-        <div class="form-group">
-          <label class="col-md-2 control-label" for="Estado Civil">Estado Civil <h11>*</h11></label>
-          <div class="col-md-2">
-            <select required id="Estado Civil" name="Estado Civil" class="form-control">
-              <option value=""></option>
-              <option value="Solteiro(a)">Solteiro(a)</option>
-              <option value="Casado(a)">Casado(a)</option>
-              <option value="Divorciado(a)">Divorciado(a)</option>
-              <option value="Viuvo(a)">Viuvo(a)</option>
-            </select>
-          </div>
-
-          <!-- Prepended checkbox -->
-
-          <label class="col-md-1 control-label" for="Filhos">Filhos<h11>*</h11></label>
-          <div class="col-md-3">
-            <div class="input-group">
-              <span class="input-group-addon">
-                <label class="radio-inline" for="radios-0">
-                  <input type="radio" name="filhos" id="filhos" value="nao" onclick="desabilita('filhos_qtd')" required>
-                  Não
-                </label>
-                <label class="radio-inline" for="radios-1">
-                  <input type="radio" name="filhos" id="filhos" value="sim" onclick="habilita('filhos_qtd')">
-                  Sim
-                </label>
-              </span>
-              <input id="filhos_qtd" name="filhos_qtd" class="form-control" type="text" placeholder="Quantos?" pattern="[0-9]+$">
-
-            </div>
-
-          </div>
         </div>
         <div class="form-group">
           <label class="col-md-2 control-label" for="Cadastrar"></label>
           <div class="col-md-8">
-            <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
-            <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+            <button id="Cadastrar" class="btn btn-success" type="Submit">Salvar</button>
+            <button id="Cancelar"  class="btn btn-danger" type="Reset">Cancelar</button>
           </div>
         </div>
 
