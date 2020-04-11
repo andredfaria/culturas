@@ -3,17 +3,17 @@
 # mysq_li Conexão com o banco de dados
 
 $host = "localhost";
-$user = "dev";
-$senha = "dev";
+$user = "root";
+$senha = "";
 $bd = "tai";
 
 $conexao = mysqli_connect($host, $user, $senha, $bd);
 
-// if($conexao){
-//     echo "conectado";
-// }
+if($conexao){
+     echo "conectado";
+}
 
 # criar tabela que esta no script.sql
-// $query = "CREATE TABLE ...";	
+ $query = "CREATE TABLE ...";	
 
-// $criarTabelas = mysqli_query($conexao, $query);
+ $criarTabelas = mysqli_query($conexao, $query);
