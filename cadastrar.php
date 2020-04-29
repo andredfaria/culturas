@@ -77,11 +77,11 @@
         </div>
 
         <div class="form-group">
-          <label class="col-md-2 control-label" for="prependedtext">Tempo De Colheita Em Dia <h11>*</h11></label>
+          <label class="col-md-2 control-label" for="prependedtext">Tempo De Colheita Em Dias <h11>*</h11></label>
           <div class="col-md-2">
             <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-              <input id="tempoDeColheitaEmDia" name="tempoDeColheitaEmDia" class="form-control" placeholder="R$ XX,XX" 
+              <input id="tempoDeColheitaEmDia" name="tempoDeColheitaEmDia" class="form-control" placeholder="x dias" 
                      required="" type="text" maxlength="10" 
                      value="<?= isset($_GET['tempoDeColheitaEmDia']) ? $_GET['tempoDeColheitaEmDia'] : "" ?>" 
                      pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" >
