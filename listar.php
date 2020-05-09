@@ -4,11 +4,12 @@
 <script src="js/listar.js"></script>
 
 <div class="container">
+  <h1 class="text-center">Lista</h1>
   <form action="apagarDados.php">
     <div class="row">
-      <div class="col-md-6">
-        <div class="panel panel-primary">
-          <table class="table table-dark">
+      <div class="col-md-10">
+        <div class="panel panel-info">
+          <table class="table table-striped">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -29,18 +30,18 @@
                   <td>R$ <?= $linha['valorMedio'] ?>,00</td>
                   <td><?= $linha['tempoDeColheitaEmDia'] ?> dias</td>
                   <td>
-                    <a class="btn btn-primary" 
+                    <a class="btn btn-primary"
                        href="cadastrar.php?nome=<?= $linha['nome'] ?>&descricao=<?= $linha['descricao'] ?>&valorMedio=<?=$linha['valorMedio'] ?>&tempoDeColheitaEmDia=<?= $linha['tempoDeColheitaEmDia'] ?>&id= <?= $linha['id']?>"
                        value="<?= $linha['nome'] ?>"
-                       id="nome" 
+                       id="nome"
                        name="nome">
                             editar
                     </button>
                   </td>
                   <td>
-                    <button class="btn btn-danger" 
-                            onClick="apagar(<?= $linha['id'] ?>)" 
-                            value="<?= $linha['id'] ?>" 
+                    <button class="btn btn-danger"
+                            onClick="apagar(<?= $linha['id'] ?>)"
+                            value="<?= $linha['id'] ?>"
                             name="apagar">
                       apagar
                     </button>
