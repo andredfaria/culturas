@@ -7,7 +7,7 @@
 <form class="form-horizontal" action="salvarDados.php">
   <fieldset>
     <div class="panel">
-      <div class="panel-heading">Cadastro de Cliente</div>
+      <div class="panel-heading">Cadastro de Cultura</div>
       <input id="id" name="id" value="<?= isset($_GET['id']) ? $_GET['id'] : "" ?>" type="hidden">
 
 
