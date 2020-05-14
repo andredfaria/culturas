@@ -3,8 +3,8 @@
 # mysq_li Conexão com o banco de dados
 
 $host = "localhost";
-$user = "dev";
-$senha = "dev";
+$user = "root";
+$senha = "";
 $bd = "tai";
 
 $conexao = mysqli_connect($host, $user, $senha, $bd);

@@ -38,7 +38,7 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-default sidebar" role="navigation">
+  <nav class="navbar navbar-inverse sidebar" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
