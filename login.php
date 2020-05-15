@@ -25,7 +25,7 @@
                             </label>
                         </div>
                     </div>
-                    <a class="btn btn-primary btn-block" href="index.php">Login</a>
+                    <a class="btn btn-primary btn-block" href="indexxx.php">Login</a>
             </form>
         </div>
     </div>
@@ -35,7 +35,7 @@
     <div class="panel panel-info">
         <div class="panel-heading">
             <div class="panel-title">Cadastre-se</div>
-            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Entrar</a></div>
+            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="indexxx.php" onclick="$('#signupbox').hide(); $('#loginbox').show()">Entrar</a></div>
         </div>
         <div class="panel-body">
             <form id="signupform" class="form-horizontal" role="form">
