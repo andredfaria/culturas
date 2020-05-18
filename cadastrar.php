@@ -7,7 +7,11 @@
 <form class="form-horizontal" action="salvarDados.php">
   <fieldset>
     <div class="panel">
-      <div class="panel-heading">Cadastro de Cultura</div>
+      <div class="panel-heading">
+        <h1 class="text-center">
+          Cadastro de Cultura
+        </h1>  
+    </div>
       <input id="id" name="id" value="<?= isset($_GET['id']) ? $_GET['id'] : "" ?>" type="hidden">
 
 
@@ -15,7 +19,7 @@
         <div class="form-group">
           <div class="col-md-11 control-label">
             <p class="help-block">
-              <h11>*</h11> Campo Obrigatório
+              <!-- <h11>*</h11> Campo Obrigatório -->
             </p>
           </div>
         </div>

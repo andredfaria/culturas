@@ -4,7 +4,7 @@
 <script src="js/listar.js"></script>
 
 <div class="container">
-  <h1 class="text-center">Lista</h1>
+  <h1 class="text-center">Lista de Culturas</h1>
   <form action="apagarDados.php">
     <div class="row">
       <div class="col-md-10">
