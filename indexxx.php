@@ -24,7 +24,7 @@
 
     <div class="row">
         <aside class="col-sm-4">
-            <p>Seu Plantio</p>
+            <p>Seu Plantio <i class="fa fa-leaf" aria-hidden="true"></i></p>
 
 
             <div class="card">
@@ -46,7 +46,7 @@
         </aside>
 
         <aside class="col-sm-4">
-            <p>Quando Colher</p>
+            <p>Quando Colher <i class="fa fa-pagelines" aria-hidden="true"></i></p>
             <div class="card">
                 <article class="card-group-item">
                     <div class="filter-content">

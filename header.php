@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Culturas</title>
+  <title>Agro Tech</title>
 
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Empresa</title>
+    <title>Agro Tech</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,8 +32,8 @@
 </head>
 
 <body>
-  <nav class="navbar-inverse" id="diferente">
-    <div class="container-fluid">
+  <nav class="navbar-inverse" id="diferente" style="border: none;">
+    <div class="container-fluid" style="border: none;">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
