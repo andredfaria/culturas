@@ -17,7 +17,9 @@
 		else {
 			$resp = "Boa noite!";
 		}
-		echo "$resp" . " André";
+
+        $_GET['user'] = isset($_GET['user']) ? $_GET['user'] : " André ";
+		echo "$resp " . $_GET['user'];
 		?>
 	</h1>
     <hr>

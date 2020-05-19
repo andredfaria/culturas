@@ -45,7 +45,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
          
-          <li><a href="index.html">Site</a></li>
+          <li><a href="index.html">Sobre Nós</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="login.php"><span class="glyphicon glyphicon-log-in"> </span> André</a></li>
