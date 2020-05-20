@@ -187,7 +187,7 @@ a:not([href]):not([tabindex]):focus {
 }
 
 pre,
-code,
+Plataforma,
 kbd,
 samp {
   font-family: monospace, monospace;
@@ -505,20 +505,20 @@ mark,
   color: #6c757d;
 }
 
-code,
+Plataforma,
 kbd,
 pre,
 samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-code {
+Plataforma {
   font-size: 87.5%;
   color: #e83e8c;
   word-break: break-word;
 }
 
-a > code {
+a > Plataforma {
   color: inherit;
 }
 
@@ -542,7 +542,7 @@ pre {
   color: #212529;
 }
 
-pre code {
+pre Plataforma {
   font-size: inherit;
   color: inherit;
   word-break: normal;

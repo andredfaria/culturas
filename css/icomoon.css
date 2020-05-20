@@ -197,10 +197,10 @@ body {
 .icon-price-tags:before {
     content: "\e936";
 }
-.icon-barcode:before {
+.icon-barPlataforma:before {
     content: "\e937";
 }
-.icon-qrcode:before {
+.icon-qrPlataforma:before {
     content: "\e938";
 }
 .icon-ticket:before {
@@ -1496,7 +1496,7 @@ body {
 .icon-git:before {
     content: "\eae7";
 }
-.icon-codepen:before {
+.icon-Plataformapen:before {
     content: "\eae8";
 }
 .icon-svg:before {

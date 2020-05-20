@@ -556,9 +556,9 @@
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
     var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
-    var ARROW_LEFT_KEYCODE = 37; // KeyboardEvent.which value for left arrow key
+    var ARROW_LEFT_KEYPlataforma = 37; // KeyboardEvent.which value for left arrow key
 
-    var ARROW_RIGHT_KEYCODE = 39; // KeyboardEvent.which value for right arrow key
+    var ARROW_RIGHT_KEYPlataforma = 39; // KeyboardEvent.which value for right arrow key
 
     var TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat events to fire after touch
 
@@ -782,12 +782,12 @@
         }
 
         switch (event.which) {
-          case ARROW_LEFT_KEYCODE:
+          case ARROW_LEFT_KEYPlataforma:
             event.preventDefault();
             this.prev();
             break;
 
-          case ARROW_RIGHT_KEYCODE:
+          case ARROW_RIGHT_KEYPlataforma:
             event.preventDefault();
             this.next();
             break;
@@ -2656,7 +2656,7 @@
     // automatically use the supported prefixed version if needed
     var prefixedProperty = getSupportedPropertyName('transform');
 
-    // now, let's make a step back and look at this code closely (wtf?)
+    // now, let's make a step back and look at this Plataforma closely (wtf?)
     // If the content of the popper grows once it's been positioned, it
     // may happen that the popper gets misplaced because of the new content
     // overflowing its reference element
@@ -3807,8 +3807,8 @@
         return a.order - b.order;
       });
 
-      // modifiers have the ability to execute arbitrary code when Popper.js get inited
-      // such code is executed in the same order of its modifier
+      // modifiers have the ability to execute arbitrary Plataforma when Popper.js get inited
+      // such Plataforma is executed in the same order of its modifier
       // they could add new properties to their options configuration
       // BE AWARE: don't add options to `options.modifiers.name` but to `modifierOptions`!
       this.modifiers.forEach(function (modifierOptions) {
@@ -3926,19 +3926,19 @@
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
     var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
-    var ESCAPE_KEYCODE = 27; // KeyboardEvent.which value for Escape (Esc) key
+    var ESCAPE_KEYPlataforma = 27; // KeyboardEvent.which value for Escape (Esc) key
 
-    var SPACE_KEYCODE = 32; // KeyboardEvent.which value for space key
+    var SPACE_KEYPlataforma = 32; // KeyboardEvent.which value for space key
 
-    var TAB_KEYCODE = 9; // KeyboardEvent.which value for tab key
+    var TAB_KEYPlataforma = 9; // KeyboardEvent.which value for tab key
 
-    var ARROW_UP_KEYCODE = 38; // KeyboardEvent.which value for up arrow key
+    var ARROW_UP_KEYPlataforma = 38; // KeyboardEvent.which value for up arrow key
 
-    var ARROW_DOWN_KEYCODE = 40; // KeyboardEvent.which value for down arrow key
+    var ARROW_DOWN_KEYPlataforma = 40; // KeyboardEvent.which value for down arrow key
 
     var RIGHT_MOUSE_BUTTON_WHICH = 3; // MouseEvent.which value for the right button (assuming a right-handed mouse)
 
-    var REGEXP_KEYDOWN = new RegExp(ARROW_UP_KEYCODE + "|" + ARROW_DOWN_KEYCODE + "|" + ESCAPE_KEYCODE);
+    var REGEXP_KEYDOWN = new RegExp(ARROW_UP_KEYPlataforma + "|" + ARROW_DOWN_KEYPlataforma + "|" + ESCAPE_KEYPlataforma);
     var Event = {
       HIDE: "hide" + EVENT_KEY,
       HIDDEN: "hidden" + EVENT_KEY,
@@ -4221,7 +4221,7 @@
       };
 
       Dropdown._clearMenus = function _clearMenus(event) {
-        if (event && (event.which === RIGHT_MOUSE_BUTTON_WHICH || event.type === 'keyup' && event.which !== TAB_KEYCODE)) {
+        if (event && (event.which === RIGHT_MOUSE_BUTTON_WHICH || event.type === 'keyup' && event.which !== TAB_KEYPlataforma)) {
           return;
         }
 
@@ -4245,7 +4245,7 @@
             continue;
           }
 
-          if (event && (event.type === 'click' && /input|textarea/i.test(event.target.tagName) || event.type === 'keyup' && event.which === TAB_KEYCODE) && $$$1.contains(parent, event.target)) {
+          if (event && (event.type === 'click' && /input|textarea/i.test(event.target.tagName) || event.type === 'keyup' && event.which === TAB_KEYPlataforma) && $$$1.contains(parent, event.target)) {
             continue;
           }
 
@@ -4288,7 +4288,7 @@
         //  - If key is other than escape
         //    - If key is not up or down => not a dropdown command
         //    - If trigger inside the menu => not a dropdown command
-        if (/input|textarea/i.test(event.target.tagName) ? event.which === SPACE_KEYCODE || event.which !== ESCAPE_KEYCODE && (event.which !== ARROW_DOWN_KEYCODE && event.which !== ARROW_UP_KEYCODE || $$$1(event.target).closest(Selector.MENU).length) : !REGEXP_KEYDOWN.test(event.which)) {
+        if (/input|textarea/i.test(event.target.tagName) ? event.which === SPACE_KEYPlataforma || event.which !== ESCAPE_KEYPlataforma && (event.which !== ARROW_DOWN_KEYPlataforma && event.which !== ARROW_UP_KEYPlataforma || $$$1(event.target).closest(Selector.MENU).length) : !REGEXP_KEYDOWN.test(event.which)) {
           return;
         }
 
@@ -4303,8 +4303,8 @@
 
         var isActive = $$$1(parent).hasClass(ClassName.SHOW);
 
-        if (!isActive && (event.which !== ESCAPE_KEYCODE || event.which !== SPACE_KEYCODE) || isActive && (event.which === ESCAPE_KEYCODE || event.which === SPACE_KEYCODE)) {
-          if (event.which === ESCAPE_KEYCODE) {
+        if (!isActive && (event.which !== ESCAPE_KEYPlataforma || event.which !== SPACE_KEYPlataforma) || isActive && (event.which === ESCAPE_KEYPlataforma || event.which === SPACE_KEYPlataforma)) {
+          if (event.which === ESCAPE_KEYPlataforma) {
             var toggle = $$$1(parent).find(Selector.DATA_TOGGLE)[0];
             $$$1(toggle).trigger('focus');
           }
@@ -4321,12 +4321,12 @@
 
         var index = items.indexOf(event.target);
 
-        if (event.which === ARROW_UP_KEYCODE && index > 0) {
+        if (event.which === ARROW_UP_KEYPlataforma && index > 0) {
           // Up
           index--;
         }
 
-        if (event.which === ARROW_DOWN_KEYCODE && index < items.length - 1) {
+        if (event.which === ARROW_DOWN_KEYPlataforma && index < items.length - 1) {
           // Down
           index++;
         }
@@ -4408,7 +4408,7 @@
     var EVENT_KEY = "." + DATA_KEY;
     var DATA_API_KEY = '.data-api';
     var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
-    var ESCAPE_KEYCODE = 27; // KeyboardEvent.which value for Escape (Esc) key
+    var ESCAPE_KEYPlataforma = 27; // KeyboardEvent.which value for Escape (Esc) key
 
     var Default = {
       backdrop: true,
@@ -4660,7 +4660,7 @@
 
         if (this._isShown && this._config.keyboard) {
           $$$1(this._element).on(Event.KEYDOWN_DISMISS, function (event) {
-            if (event.which === ESCAPE_KEYCODE) {
+            if (event.which === ESCAPE_KEYPlataforma) {
               event.preventDefault();
 
               _this5.hide();
