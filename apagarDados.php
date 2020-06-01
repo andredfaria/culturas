@@ -63,4 +63,4 @@ if(mysqli_query($conexao, $sql)){
 }
 
 
-include 'footer.php' ?>
+// include 'footer.php' ?>

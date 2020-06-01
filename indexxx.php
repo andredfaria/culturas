@@ -1,3 +1,4 @@
+<body style="background-color: white">
 <link rel="icon" href="images/23.png" type="image/gif" />
 <?php include 'config.php' ?>
 <?php include 'header.php' ?>
@@ -7,14 +8,14 @@
 <script type="text/javascript" src="https://pt.eltiempo.es/widget/widget_loader/05ef92906b9b48212ff449886c9901b8"></script>
 <div class="container">
     <br>
-    <h1 class="text-center"><?php
+    <h1 class="display-3"><?php
                             $hr = date(" H ");
                             if ($hr >= 12 && $hr < 18) {
-                                $resp = "Boa tarde!";
+                                $resp = "Boa Tarde!";
                             } else if ($hr >= 0 && $hr < 12) {
-                                $resp = "Bom dia!";
+                                $resp = "Bom Dia!";
                             } else {
-                                $resp = "Boa noite!";
+                                $resp = "Boa Noite!";
                             }
 
                             $_GET['user'] = isset($_GET['user']) ? $_GET['user'] : " André ";
@@ -32,7 +33,7 @@
                 <article class="card-group-item">
                     <div class="filter-content">
                         <div class="list-group list-group-flush">
-                            <a href="#" class="list-group-item">Milho <span class="float-right badge badge-light round">142 pés</span> </a>
+                            <a href="#" class="list-group-item list-group-item-primary">Milho <span class="float-right badge badge-light round">142 pés</span> </a>
                             <a href="#" class="list-group-item">Café <span class="float-right badge badge-light round">3
                                     pés</span> </a>
                             <a href="#" class="list-group-item">Algodão <span class="float-right badge badge-light round">32 pés</span> </a>
@@ -69,4 +70,5 @@
 </div>
 
 </div>
-<?php include 'footer.php' ?>
+<?php //include 'footer.php' ?>
+</body>
