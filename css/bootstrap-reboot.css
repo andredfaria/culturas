@@ -157,7 +157,7 @@ a:not([href]):not([tabindex]):focus {
 }
 
 pre,
-code,
+Plataforma,
 kbd,
 samp {
   font-family: monospace, monospace;

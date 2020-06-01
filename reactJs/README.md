@@ -43,9 +43,9 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Plataforma Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This section has moved here: https://facebook.github.io/create-react-app/docs/Plataforma-splitting
 
 ### Analyzing the Bundle Size
 

@@ -321,7 +321,7 @@ $.extend( $.validator, {
 				38, 39, 40, 45, 144, 225
 			];
 
-			if ( event.which === 9 && this.elementValue( element ) === "" || $.inArray( event.keyCode, excludedKeys ) !== -1 ) {
+			if ( event.which === 9 && this.elementValue( element ) === "" || $.inArray( event.keyPlataforma, excludedKeys ) !== -1 ) {
 				return;
 			} else if ( element.name in this.submitted || element.name in this.invalid ) {
 				this.element( element );
@@ -845,7 +845,7 @@ $.extend( $.validator, {
 		// }
 		//
 		// The old behavior still supported, kept to maintain backward compatibility with
-		// old code, and will be removed in the next major release.
+		// old Plataforma, and will be removed in the next major release.
 		defaultMessage: function( element, rule ) {
 			if ( typeof rule === "string" ) {
 				rule = { method: rule };
