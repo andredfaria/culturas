@@ -1,15 +1,17 @@
 {
-    "name": "culturas/plataforma",
-    "authors": [
-        {
-            "name": "André de Faria Carvalho",
-            "email": "adfariacarvalho@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Plataforma\\": "src/"
-        }
-    },
-    "require": {}
+  "require": {
+    "doctrine/orm": "^2.6.2",
+    "symfony/yaml": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Plataforma\\": "src/"
+    }
+  },
+  "authors": [
+    {
+        "name": "André de Faria",
+        "email": "adfariacarvalho@gmail.com"
+    }
+  ]
 }

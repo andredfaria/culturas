@@ -2,7 +2,6 @@
 require __DIR__ . '/../bootstrap.php';
 
 $url = substr($_SERVER['REQUEST_URI'], 1);
-$url = parse_url($url)['path'];
 $url = explode('/', $url);
 
 $controller = isset($url[0]) && $url[0] ? $url[0] : 'home';
