@@ -12,7 +12,7 @@
           Cadastro de Cultura
         </h1>  
     </div>
-      <input id="id" name="id" value="<?= isset($_GET['id']) ? $_GET['id'] : "" ?>" type="hidden">
+      <input id="id" name="id" value="<?= isset($view->edit[0]['id']) ? $view->edit[0]['id'] : "" ?>" type="hidden">
 
 
       <div class="panel-body">
@@ -28,7 +28,7 @@
           <label class="col-md-2 control-label" for="nome">Nome <h11>*</h11></label>
           <div class="col-md-8">
             <input id="nome" name="nome"
-                   value="<?= isset($_GET['nome']) ? $_GET['nome'] : "" ?>"
+                   value="<?= isset($view->edit["nome"]) ? $view->edit["nome"] : "" ?>"
                    placeholder="Nome"
                    class="form-control input-md"
                    required=""
@@ -40,7 +40,7 @@
           <label class="col-md-2 control-label" for="Descricao">Descricao <h11>*</h11></label>
           <div class="col-md-8">
             <input id="descricao" name="descricao"
-                   value="<?= isset($_GET['descricao']) ? $_GET['descricao'] : "" ?>"
+                   value="<?= isset($view->edit[0]['descricao']) ? $view->edit[0]['descricao'] : "" ?>"
                    placeholder="Descrição" class="form-control input-md"
                    required="" type="text">
           </div>
@@ -74,7 +74,7 @@
             <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
               <input id="valorMedio" name="valorMedio" class="form-control" placeholder="R$ XX,XX"
                      required="" type="text" maxlength="10"
-                     value="<?= isset($_GET['valorMedio']) ? $_GET['valorMedio'] : "" ?>"
+                     value="<?= isset($view->edit[0]['valorMedio']) ? $view->edit[0]['valorMedio'] : "" ?>"
                      pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" >
             </div>
           </div>
@@ -87,7 +87,7 @@
             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
               <input id="tempoDeColheitaEmDia" name="tempoDeColheitaEmDia" class="form-control" placeholder="x dias"
                      required="" type="text" maxlength="10"
-                     value="<?= isset($_GET['tempoDeColheitaEmDia']) ? $_GET['tempoDeColheitaEmDia'] : "" ?>"
+                     value="<?= isset($view->edit[0]['tempoDeColheitaEmDia']) ? $view->edit[0]['tempoDeColheitaEmDia'] : "" ?>"
                      pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" >
             </div>
           </div>

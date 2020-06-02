@@ -21,17 +21,17 @@
               </tr>
             </thead>
             <tbody>
-              <?php while ($linha = mysqli_fetch_array($consulta)) { ?>
+              <?php foreach ($this->culturas as $i => $cultura) { ?>
                 <tr>
-                  <td><?= $linha['id'] ?></td>
-                  <td><?= $linha['nome'] ?></td>
-                  <td><?= $linha['descricao'] ?></td>
-                  <td>R$ <?= $linha['valorMedio'] ?>,00</td>
-                  <td><?= $linha['tempoDeColheitaEmDia'] ?> dias</td>
+                  <td><?= $cultura['id'] ?></td>
+                  <td><?= $cultura['nome'] ?></td>
+                  <td><?= $cultura['descricao'] ?></td>
+                  <td>R$ <?= $cultura['valorMedio'] ?>,00</td>
+                  <td><?= $cultura['tempoDeColheitaEmDia'] ?> dias</td>
                   <td>
                     <a class="btn btn-primary"
-                       href="cadastrar.php?nome=<?= $linha['nome'] ?>&descricao=<?= $linha['descricao'] ?>&valorMedio=<?=$linha['valorMedio'] ?>&tempoDeColheitaEmDia=<?= $linha['tempoDeColheitaEmDia'] ?>&id= <?= $linha['id']?>"
-                       value="<?= $linha['nome'] ?>"
+                       href="cadastrar.php?nome=<?= $cultura['nome'] ?>&descricao=<?= $cultura['descricao'] ?>&valorMedio=<?=$cultura['valorMedio'] ?>&tempoDeColheitaEmDia=<?= $cultura['tempoDeColheitaEmDia'] ?>&id= <?= $cultura['id']?>"
+                       value="<?= $cultura['nome'] ?>"
                        id="nome"
                        name="nome">
                             editar
@@ -39,8 +39,8 @@
                   </td>
                   <td>
                     <button class="btn btn-danger"
-                            onClick="apagar(<?= $linha['id'] ?>)"
-                            value="<?= $linha['id'] ?>"
+                            onClick="apagar(<?= $cultura['id'] ?>)"
+                            value="<?= $cultura['id'] ?>"
                             name="apagar">
                       apagar
                     </button>
@@ -57,5 +57,5 @@
 <script>
 </script>
 
-<?php require VIEWS_PATH . 'includes/header.phtml'; ?>
+<?php require VIEWS_PATH . 'includes/footer.phtml'; ?>
 
