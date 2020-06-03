@@ -10,17 +10,21 @@ class CadastrarController
 	public function index()
 	{
 		$view = new View('site/cadastrar.php');
+		$id = 0;
+
+		$conexao = Connection::getInstance();
+		$edit = new Cadastro($conexao);
 
 		// get o id do cadastrar
-		if($_SERVER['REQUEST_URI'] == '/cadastrar/1' ){
-			$conexao = Connection::getInstance();
-			$edit = new Cadastro($conexao);
-			// var_dump(str_replace($_SERVER['REQUEST_URI']));		
-	
-			$view->edit = $edit->getIdCadastro(1);
-			// var_dump($view->edit);
-		}
-	
+		if($_SERVER['REQUEST_URI'] == '/cadastrar/1' )
+			$id = 1;
+		
+		$view->s = $edit->getIdCadastro($id);
+		
 		return $view->render();
+	}
+
+	public function teste(){
+		var_dump($_POST);
 	}
 }

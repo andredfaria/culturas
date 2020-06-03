@@ -1,9 +1,11 @@
 <?php
+
+//Rodar php -S localhost:8000 -t public
 // use Doctrine\DBAL\Configuration;
 // use Doctrine\DBAL\DriverManager;
 require __DIR__ . '/vendor/autoload.php';
 
-define('HOME', 'http://' . $_SERVER['HTTP_HOST']);
+define('HOME', 'http://' . $_SERVER['HTTP_HOST']) ;
 define('VIEWS_PATH', __DIR__ . '/views/');
 
 define('UPLOAD_PATH', __DIR__ . '/public/uploads/');
