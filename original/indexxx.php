@@ -1,6 +1,7 @@
 <link rel="icon" href="images/23.png" type="image/gif" />
 <?php include 'config.php' ?>
 <?php include 'header.php' ?>
+<?php include 'bucarDadosHome.php' ?>
 <?php
 
 ?>
@@ -32,11 +33,15 @@
                 <article class="card-group-item">
                     <div class="filter-content">
                         <div class="list-group list-group-flush">
-                            <a href="#" class="list-group-item">Milho <span class="float-right badge badge-light round">142 pés</span> </a>
-                            <a href="#" class="list-group-item">Café <span class="float-right badge badge-light round">3
-                                    pés</span> </a>
-                            <a href="#" class="list-group-item">Algodão <span class="float-right badge badge-light round">32 pés</span> </a>
-                            <a href="#" class="list-group-item">Cana <span class="float-right badge badge-light round">12 pés</span> </a>
+                        <?php while ($linha = mysqli_fetch_array($consultaPlantio)) { ?>
+                            <a href="#" class="list-group-item">
+                                <?= $linha['nome']  ?>
+                                <span class="float-right badge badge-light round">
+                                    <?= $linha['quantidade'] ?>
+                                    <?= $linha['unidade'] ?>
+                                </span> 
+                                </a>
+                        <?php }?>
                         </div>
                     </div>
                 </article>
@@ -49,10 +54,15 @@
                 <article class="card-group-item">
                     <div class="filter-content">
                         <div class="list-group list-group-flush">
-                            <a href="#" class="list-group-item">Milho <span class="float-right badge badge-light round">em 35 dias </span></a>
-                            <a href="#" class="list-group-item">Café <span class="float-right badge badge-light round">em 309 dias</span> </a>
-                            <a href="#" class="list-group-item">Algodão <span class="float-right badge badge-light round">em 52 dias</span> </a>
-                            <a href="#" class="list-group-item">Cana <span class="float-right badge badge-light round">em 8 dias</span> </a>
+                        <?php while ($linha = mysqli_fetch_array($consultaColheita)) { ?>
+                            <a href="#" class="list-group-item">
+                                <?= $linha['nome']?> 
+                                <span class="float-right badge badge-light round">
+                                    <?= 'Em '. $linha['diasRestantes'] . ' dias' ?>
+                                </span>
+                            </a>
+                        <?php }?>
+                         
                         </div>
                     </div>
                 </article>
