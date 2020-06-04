@@ -21,8 +21,6 @@ class Cadastro extends Entity
 
 		$edit = $this->conn->query($sql);
 
-		$edit = $edit->fetchAll(\PDO::FETCH_ASSOC);
-
-		return $edit[0];
+		return $edit->fetchAll(\PDO::FETCH_ASSOC);
 	}
 }
