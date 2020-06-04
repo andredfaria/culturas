@@ -1,7 +1,7 @@
 <link rel="icon" href="images/23.png" type="image/gif" />
-<?php include 'config.php' ?>
-<?php include 'header.php' ?>
-<?php include 'bucarDadosHome.php' ?>
+<?php include 'config/config.php' ?>
+<?php include 'template/header.php' ?>
+<?php include 'model/model/bucarDadosHome.php' ?>
 <?php
 
 ?>
@@ -79,4 +79,4 @@
 </div>
 
 </div>
-<?php include 'footer.php' ?>
+<?php include 'template/footer.php' ?>

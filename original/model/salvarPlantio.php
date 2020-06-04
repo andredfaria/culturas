@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../config/config.php';
 // var_dump($_GET);
 // exit;
 $id = $_GET['id']; 
@@ -29,7 +29,7 @@ if(mysqli_query($conexao, $query)){
     echo 'Deu erro';
 }
 ?>
-<?php include 'header.php' ?>
+<?php include 'template/header.php' ?>
 <a class="btn-primary btn"
    href="vincular.php">
     voltar

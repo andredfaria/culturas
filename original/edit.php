@@ -1,5 +1,5 @@
-<?php include 'header.php'  ?>
-<?php include 'buscarDados.php' ?>
+<?php include 'template/header.php'  ?>
+<?php include 'model/buscarDados.php' ?>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="css/edit.css" rel="stylesheet" id="edit">
@@ -115,4 +115,4 @@
 
 
     </div>
-    <?php include 'footer.php'?>
+    <?php include 'template/footer.php'?>

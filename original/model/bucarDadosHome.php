@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../config/config.php';
 
 $query = "SELECT * FROM culturas c INNER JOIN plantio p ON c.id = p.idCulturas";
 $consultaPlantio = mysqli_query($conexao, $query);

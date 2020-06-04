@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../config/config.php';
 
 $id = $_GET['id']; 
 $nome = $_GET['nome']; 
@@ -26,7 +26,7 @@ if(mysqli_query($conexao, $query)){
     echo 'Deu erro';
 }
 ?>
-<?php include 'header.php' ?>
+<?php include 'template/header.php' ?>
 <a class="btn-primary btn"
    href="listar.php">
     voltar

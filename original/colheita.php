@@ -1,11 +1,11 @@
-<?php include 'header.php' ?>
-<?php include 'buscarDados.php' ?>
+<?php include 'template/header.php' ?>
+<?php include 'model/buscarDados.php' ?>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//Plataforma.jquery.com/jquery-1.11.1.min.js"></script>
 
-<form class="form-horizontal" action="salvarPlantio.php">
+<form class="form-horizontal" action="model/salvarPlantio.php">
   <fieldset>
     <div class="panel">
       <div class="panel-heading">
@@ -78,4 +78,4 @@
   </fieldset>
 </form>
 
-<?php include 'footer.php' ?>
+<?php include 'template/footer.php' ?>
