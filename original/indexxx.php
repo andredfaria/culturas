@@ -1,8 +1,8 @@
 <body style="background-color: white">
 <link rel="icon" href="images/23.png" type="image/gif" />
-<?php include 'config.php' ?>
-<?php include 'header.php' ?>
-<?php include 'bucarDadosHome.php' ?>
+<?php include 'config/config.php' ?>
+<?php include 'template/header.php' ?>
+<?php include 'model/model/bucarDadosHome.php' ?>
 <?php
 
 ?>
@@ -88,5 +88,9 @@
 </div>
 
 </div>
+<<<<<<< HEAD
 <?php //include 'footer.php' ?>
 </body>
+=======
+<?php include 'template/footer.php' ?>
+>>>>>>> 6a8f8c19072be7a7a3c5ccc2f60ab5ea101f690b

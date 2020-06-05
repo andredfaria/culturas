@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php include 'template/header.php' ?>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -88,4 +88,8 @@
   </fieldset>
 </form>
 
+<<<<<<< HEAD
 <?php // include 'footer.php' ?>
+=======
+<?php include 'template/footer.php' ?>
+>>>>>>> 6a8f8c19072be7a7a3c5ccc2f60ab5ea101f690b

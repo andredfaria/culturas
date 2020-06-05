@@ -1,7 +1,7 @@
 
 <?php
-include 'header.php';
-include 'config.php';
+include '../template/header.php';
+include '../config/config.php';
 
 
 
@@ -15,4 +15,4 @@ if(mysqli_query($conexao, $sql)){
 }
 
 
-include 'footer.php' ?>
+include 'template/footer.php' ?>

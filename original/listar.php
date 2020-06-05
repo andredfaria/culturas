@@ -1,11 +1,11 @@
-<?php include 'header.php' ?>
-<?php include 'buscarDados.php' ?>
+<?php include 'template/header.php' ?>
+<?php include 'model/buscarDados.php' ?>
 
 <script src="js/listar.js"></script>
 
 <div class="container">
   <h1 class="text-center">Lista de Culturas</h1>
-  <form action="apagarDados.php">
+  <form action="model/apagarDados.php">
     <div class="row">
       <div class="col-md-10">
         <div class="panel panel-info">
@@ -74,4 +74,8 @@
 <script>
 </script>
 
+<<<<<<< HEAD
 <?php // include 'footer.php' ?>
+=======
+<?php include 'template/footer.php' ?>
+>>>>>>> 6a8f8c19072be7a7a3c5ccc2f60ab5ea101f690b
