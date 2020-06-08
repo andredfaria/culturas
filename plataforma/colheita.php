@@ -6,7 +6,7 @@
 <script src="//Plataforma.jquery.com/jquery-1.11.1.min.js"></script> 
 -->
 
-<div class="container-wrapper">
+<div class="content-wrapper">
   <form class="form-horizontal" action="model/salvarPlantio.php">
     <fieldset>
       <div class="panel">
@@ -21,7 +21,7 @@
           <div class="form-group">
             <label class="col-md-2 control-label" for="nome">Cultura Colhida<h11>*</h11></label>
             <div class="col-md-8">
-              <select name="selectCultutas" id="selectCultutas">
+              <select class="input-group" name="selectCultutas" id="selectCultutas">
                 <?php while ($linha = mysqli_fetch_array($consulta)) { ?>
                   <option name="<?= $linha['nome'] ?>" 
                           value="<?= $linha['id'] ?>" >
@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-2 control-label" for="data">Data da Colheita<h11>*</h11></label>
+            <label class="col-md-2 control-label input-group" for="data">Data da Colheita<h11>*</h11></label>
             <div class="col-md-8">
               <input id="data" name="data"
                     value="<?= isset($_GET['data']) ? $_GET['data'] : "" ?>"
@@ -45,7 +45,7 @@
 
 
           <div class="form-group">
-            <label class="col-md-2 control-label" for="prependedtext">Lucro <h11>*</h11></label>
+            <label class="col-md-2 control-label input-group" for="prependedtext">Lucro <h11>*</h11></label>
             <div class="col-md-2">
               <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
@@ -59,7 +59,7 @@
 
           <div class="form-group">
             <label class="col-md-2 control-label" for="prependedtext">Observações <h11>*</h11></label>
-            <div class="col-md-2">
+            <div class="col-md-12">
               <div class="input-group">
                   <textarea class="input-group" name="observacao" id="observacao" cols="30" rows="10"></textarea>
             </div>

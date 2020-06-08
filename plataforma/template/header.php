@@ -41,7 +41,7 @@
           </li>
 
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-            <a class="nav-link" href="listar.php">
+            <a class="nav-link" href="cadastrar.php">
               <i class="fa fa-fw fa-plus"></i>
               <span class="nav-link-text">
                 Cadastrar um Culturas</span>
@@ -49,7 +49,7 @@
           </li>
 
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-            <a class="nav-link" href="lista.php">
+            <a class="nav-link" href="listar.php">
               <i class="fa fa-fw fa-list"></i>
               <span class="nav-link-text">
                 Listas de Culturas</span>
@@ -73,7 +73,7 @@
             </ul>
           </li>
 				  
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
             <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" 
                href="#collapseExamplePages" data-parent="#exampleAccordion">
               <i class="fa fa-fw fa-file"></i>
@@ -91,8 +91,9 @@
                 <a href="projecao.html">Projeção</a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title=" Menu ">
+          </li> -->
+
+          <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title=" Menu ">
             <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" 
                href="#collapseMulti" data-parent="#exampleAccordion">
               <i class="fa fa-fw fa-sitemap"></i>
@@ -107,7 +108,8 @@
                 <a href="rota_entrega.php">Entrega</a>
               </li>
             </ul>
-          </li>
+          </li> -->
+
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
             <a class="nav-link" href="../">
               <i class="fa fa-fw fa-link"></i>
@@ -180,21 +182,9 @@
               </a>
             </div>
           </li>
-		  
+				
           <li class="nav-item">
-            <form class="form-inline my-2 my-lg-0 mr-lg-2">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Procurar...">
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </span>
-              </div>
-            </form>
-			
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <a class="nav-link" href="../" >
               <i class="fa fa-fw fa-sign-out"></i>
               Sair</a>
           </li>
