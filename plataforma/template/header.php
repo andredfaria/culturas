@@ -14,8 +14,8 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-    <link href="assets/css/sb-admin.css" rel="stylesheet">
-    <link rel="icon" href="assets/images/23.png" type="image/gif" />
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="icon" href="images/23.png" type="image/gif" />
 
   </head>
 
