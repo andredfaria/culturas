@@ -2,10 +2,10 @@
 
 # mysq_li Conexão com o banco de dados
 
-$host = "localhost";
-$user = "root";
-$senha = "";
-$bd = "tai";
+$host = "andrx.com.br";
+$user = "andrxc15_dev";
+$senha = "andrxc15_dev";
+$bd = "andrxc15_tai";
 
 $conexao = mysqli_connect($host, $user, $senha, $bd);
 

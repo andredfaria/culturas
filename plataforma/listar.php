@@ -41,15 +41,15 @@
             </a>
           </li>
 
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-            <a class="nav-link" href="listar.php">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Cadastrar">
+            <a class="nav-link" href="cadastrar.php">
               <i class="fa fa-fw fa-plus"></i>
               <span class="nav-link-text">
                 Cadastrar um Culturas</span>
             </a>
           </li>
 
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Listar">
             <a class="nav-link" href="listar.php">
               <i class="fa fa-fw fa-list"></i>
               <span class="nav-link-text">
@@ -57,7 +57,7 @@
             </a>
           </li>
 		  
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Vincular">
             <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" 
                href="#collapseTable" data-parent="#exampleAccordion">
               <i class="fa fa-fw fa-leaf "></i>
@@ -74,7 +74,7 @@
             </ul>
           </li>
 				  
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+<!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
             <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" 
                href="#collapseExamplePages" data-parent="#exampleAccordion">
               <i class="fa fa-fw fa-file"></i>
@@ -108,7 +108,7 @@
                 <a href="rota_entrega.php">Entrega</a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
             <a class="nav-link" href="../">
               <i class="fa fa-fw fa-link"></i>
