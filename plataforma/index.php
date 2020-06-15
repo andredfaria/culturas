@@ -44,7 +44,7 @@ include 'model/bucarDadosHome.php';
             </a>
           </li>
 
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Cadastrar">
             <a class="nav-link" href="cadastrar.php">
               <i class="fa fa-fw fa-plus"></i>
               <span class="nav-link-text">
@@ -52,7 +52,7 @@ include 'model/bucarDadosHome.php';
             </a>
           </li>
 
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Listar">
             <a class="nav-link" href="listar.php">
               <i class="fa fa-fw fa-list"></i>
               <span class="nav-link-text">
@@ -60,7 +60,7 @@ include 'model/bucarDadosHome.php';
             </a>
           </li>
 		  
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Vincular">
             <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" 
                href="#collapseTable" data-parent="#exampleAccordion">
               <i class="fa fa-fw fa-leaf "></i>
@@ -77,7 +77,7 @@ include 'model/bucarDadosHome.php';
             </ul>
           </li>
 				  
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
             <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" 
                href="#collapseExamplePages" data-parent="#exampleAccordion">
               <i class="fa fa-fw fa-file"></i>
@@ -111,7 +111,7 @@ include 'model/bucarDadosHome.php';
                 <a href="rota_entrega.php">Entrega</a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
             <a class="nav-link" href="../">
               <i class="fa fa-fw fa-link"></i>
@@ -305,7 +305,7 @@ include 'model/bucarDadosHome.php';
                     <article class="card-group-item">
                         <div class="filter-content">
                             <div class="list-group list-group-flush">
-                            <?php while ($linha = mysqli_fetch_array($consultaPlantio,MYSQLI_ASSOC)) { ?>
+                            <?php while ($linha = mysqli_fetch_array($consultaPlantio)) { ?>
                                 <a href="#" class="list-group-item">
                                     <?= $linha['nome']  ?>
                                     <span class="float-right badge badge-light round">
