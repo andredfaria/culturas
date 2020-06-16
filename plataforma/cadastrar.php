@@ -192,6 +192,7 @@
                 </span>
               </div>
             </form>
+          </li>
 			
           <li class="nav-item">
             <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
