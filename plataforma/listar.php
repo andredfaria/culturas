@@ -306,7 +306,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <a class="btn btn-primary" href="login.html">Sair</a>
+            <a class="btn btn-primary" href="../..">Sair</a>
           </div>
         </div>
       </div>

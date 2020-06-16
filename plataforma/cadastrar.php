@@ -208,7 +208,7 @@
 <script src="//Plataforma.jquery.com/jquery-1.11.1.min.js"></script>
 
 <div class="content-wrapper">
-  <form class="form-horizontal" action="salvarDados.php">
+  <form class="form-horizontal" action="model/salvarDados.php">
   <div class="container-wrapper panel">
       <div class="container-fluid">
       
@@ -320,7 +320,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <a class="btn btn-primary" href="login.html">Sair</a>
+            <a class="btn btn-primary" href="../">Sair</a>
           </div>
         </div>
       </div>

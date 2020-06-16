@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="panel-body">
-              <form action="salvarDados.php" method="POST" class="form-horizontal">
+              <form action="model/salvarDados.php" method="POST" class="form-horizontal">
                 <div class="row">
                   <div class=" col-xs-12 col-sm-3 col-lg-2 text-center pull-right">
                     <img src="http://placehold.it/100x100" alt="..." class="img-rounded">

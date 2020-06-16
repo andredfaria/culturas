@@ -1,5 +1,32 @@
 <?php 
-include 'model/bucarDadosHome.php';
+
+$host = "localhost";
+$user = "root";
+$senha = "";
+$bd = "tai";
+
+$conexao = mysqli_connect($host, $user, $senha, $bd);
+
+if(!$conexao){
+     echo '<div class="alert alert-warning" role="alert">
+            This is a warning alert—check it out!
+            </div>';
+}
+
+$queryConsultaPlantio = "SELECT * FROM culturas c INNER JOIN plantio p ON c.id = p.idCulturas";
+$consultaPlantio = mysqli_query($conexao, $queryConsultaPlantio);
+
+$queryConsultaColheita = "
+            SELECT  *, 
+                    DATE_ADD(p.`data`,INTERVAL c.tempoDeColheitaEmDia DAY) AS diaDaColheita,
+                    DATEDIFF((SELECT DATE_ADD(p.`data`,INTERVAL c.tempoDeColheitaEmDia DAY)), CURDATE()) AS diasRestantes
+            FROM culturas c 
+                INNER JOIN plantio AS p ON c.id = p.idCulturas
+            WHERE  DATE_ADD(p.`data`,INTERVAL c.tempoDeColheitaEmDia DAY) > CURDATE()
+            ORDER BY id DESC
+        ";
+        
+$consultaColheita = mysqli_query($conexao, $queryConsultaColheita);
 ?>
  
 <!DOCTYPE html>
@@ -248,7 +275,7 @@ include 'model/bucarDadosHome.php';
                   <i class="fa fa-fw fa-list"></i>
                 </div>
                 <div class="mr-5">
-                  6 Novas Tarefas 
+                  10 culturas cadastradas 
                 </div>
               </div>
               <a href="#" class="card-footer text-white clearfix small z-1">
@@ -260,16 +287,15 @@ include 'model/bucarDadosHome.php';
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-success o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fa fa-fw fa-shopping-cart"></i>
+              <!-- <div class="leaf-body">
+                <div class="plant-body-icon">
+                  <i class="fa fa-fw fa-leaf"></i>
                 </div>
                 <div class="mr-5">
-                  6 Novos Pedidos 
+                  10 Culturas 
                 </div>
-              </div>
-              <a href="#" class="card-footer text-white clearfix small z-1">
+              </div> -->
+              <!-- <a href="#" class="card-footer text-white clearfix small z-1">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
@@ -292,8 +318,8 @@ include 'model/bucarDadosHome.php';
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
                 </span>
-              </a>
-            </div>
+              </a> -->
+            <!-- </div> -->
           </div>
         </div>
     <!-- fim da parte a ser retirada se não encontrar utilidade -->
@@ -307,11 +333,11 @@ include 'model/bucarDadosHome.php';
                 <article class="card-group-item">
                     <div class="filter-content">
                         <div class="list-group list-group-flush">
-                            <a href="#" class="list-group-item list-group-item-primary">Milho <span class="float-right badge badge-light round">142 pés</span> </a>
+                            <a href="#" class="list-group-item ">Arroz <span class="float-right badge badge-light round">142 pés</span> </a>
                             <a href="#" class="list-group-item">Café <span class="float-right badge badge-light round">3
                                     pés</span> </a>
-                            <a href="#" class="list-group-item">Algodão <span class="float-right badge badge-light round">32 pés</span> </a>
-                            <a href="#" class="list-group-item">Cana <span class="float-right badge badge-light round">12 pés</span> </a>
+                            <a href="#" class="list-group-item">Feijao <span class="float-right badge badge-light round">32 alqueire</span> </a>
+                            <a href="#" class="list-group-item">Milho <span class="float-right badge badge-light round">12 pés</span> </a>
                         </div>
                     </div>
                 </article>
@@ -325,15 +351,10 @@ include 'model/bucarDadosHome.php';
                     <article class="card-group-item">
                         <div class="filter-content">
                             <div class="list-group list-group-flush">
-                            <?php while ($linha = mysqli_fetch_array($consultaColheita)) { ?>
-                                <a href="#" class="list-group-item">
-                                    <?= $linha['nome']?> 
-                                    <span class="float-right badge badge-light round">
-                                        <?= 'Em '. $linha['diasRestantes'] . ' dias' ?>
-                                    </span>
-                                </a>
-                            <?php }?>
-                            
+                              <a href="#" class="list-group-item ">Arroz <span class="float-right badge badge-light round">142 dias</span> </a>
+                              <a href="#" class="list-group-item">Café <span class="float-right badge badge-light round">	60 dias</span> </a>
+                              <a href="#" class="list-group-item">Feijao <span class="float-right badge badge-light round">10 dias</span> </a>
+                              <a href="#" class="list-group-item">Milho <span class="float-right badge badge-light round">50 dias</span> </a>
                             </div>
                         </div>
                     </article>
@@ -446,7 +467,7 @@ include 'model/bucarDadosHome.php';
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <a class="btn btn-primary" href="login.html">Sair</a>
+            <a class="btn btn-primary" href="../">Sair</a>
           </div>
         </div>
       </div>

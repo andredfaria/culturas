@@ -118,7 +118,7 @@ var ctx = document.getElementById("myBarChart");
 var myLineChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: index["Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "rgba(2,117,216,1)",
@@ -161,7 +161,7 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ["Vendedor 1", "Vendedor 2", "Vendedor 3", "Vendedor 4"],
+    labels: ["Arroz", "Laranja", "Limao", "cafe"],
     datasets: [{
       data: [30.54, 15.58, 11.25, 15.32],
       backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],

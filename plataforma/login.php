@@ -9,7 +9,7 @@
     <div class="container" id="telalogin">
 
         <div class="well">
-            <form action="indexxx.php">
+            <form action="index.php">
                 <div class="panel-group">
                     <div class="col-6">
                         <label for="nome">Nome</label>

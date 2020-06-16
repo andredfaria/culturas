@@ -4,7 +4,7 @@
 -fazer uma tela para  quando salvar os dados no SalvarPlantio e SalvarDAdos,
 -remover os comentarios,
 -remover os DBUgs os vardumpS e os Echos,
--renomear o indexxx para index e refatorar aonde chama ele nos aquivos,
+-renomear o index para index e refatorar aonde chama ele nos aquivos,
 -adicionar icones,
 -Criar chaves para as tabelas,
 -criar uma tabela colheita,

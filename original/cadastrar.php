@@ -4,7 +4,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//Plataforma.jquery.com/jquery-1.11.1.min.js"></script>
 
-<form class="form-horizontal" action="salvarDados.php">
+<form class="form-horizontal" action="model/salvarDados.php">
   <fieldset>
     <div class="panel">
       <div class="panel-heading">

@@ -8,7 +8,7 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<form class="form-horizontal" action="salvarDados.php">
+<form class="form-horizontal" action="model/salvarDados.php">
   <fieldset>
     <div class="panel">
       <div class="panel-heading">
