@@ -23,7 +23,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="index.html">Gerenciador - AgroTech</a>
+      <a class="navbar-brand" href="">Gerenciador - AgroTech</a>
       <button class="navbar-toggler navbar-toggler-right" 
               type="button" data-toggle="collapse" data-target="#navbarResponsive" 
               aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,7 +141,7 @@
               <h6 class="dropdown-header">Entradas:</h6>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">
-                <strong>Cliente</strong>
+                <strong>Produtos</strong>
                 <span class="small float-right text-muted">02/06/2020</span>
                 <div class="dropdown-message small">RS90,00</div> 
               </a>
@@ -169,7 +169,7 @@
               <h6 class="dropdown-header">Saídas:</h6>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">
-                <strong>Fornecedor</strong>
+                <strong>Culturas</strong>
                 <span class="small float-right text-muted">02/06/2020</span>
                 <div class="dropdown-message small">R$90,00
 				</div> 

@@ -11,10 +11,10 @@
     <meta name="author" content="">
     <title>Painel - AgroTech</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="template/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="template/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="assets/css/sb-admin.css" rel="stylesheet">
     <link rel="icon" href="images/23.png" type="image/gif" />
 
   </head>
@@ -23,7 +23,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="index.html">Gerenciador - AgroTech</a>
+      <a class="navbar-brand" href="">Gerenciador - AgroTech</a>
       <button class="navbar-toggler navbar-toggler-right" 
               type="button" data-toggle="collapse" data-target="#navbarResponsive" 
               aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,7 +143,7 @@
               <h6 class="dropdown-header">Entradas:</h6>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">
-                <strong>Cliente</strong>
+                <strong>Produtos</strong>
                 <span class="small float-right text-muted">02/06/2020</span>
                 <div class="dropdown-message small">RS90,00</div> 
               </a>
