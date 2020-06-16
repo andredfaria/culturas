@@ -18,8 +18,8 @@ include 'model/bucarDadosHome.php';
     <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="template/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="template/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-    <link href="assets/css/sb-admin.css" rel="stylesheet">
-    <link rel="icon" href="assets/images/23.png" type="image/gif" />
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="icon" href="images/23.png" type="image/gif" />
 
   </head>
 
@@ -297,28 +297,25 @@ include 'model/bucarDadosHome.php';
     <!-- fim da parte a ser retirada se não encontrar utilidade -->
     
         <div class="row mb-5">
-            <aside class="col-sm-4">
-                <p>Seu Plantio <i class="fa fa-leaf" aria-hidden="true"></i></p>
+        <aside class="col-sm-4">
+            <p>Seu Plantio <i class="fa fa-leaf" aria-hidden="true"></i></p>
 
 
-                <div class="card">
-                    <article class="card-group-item">
-                        <div class="filter-content">
-                            <div class="list-group list-group-flush">
-                            <?php while ($linha = mysqli_fetch_array($consultaPlantio)) { ?>
-                                <a href="#" class="list-group-item">
-                                    <?= $linha['nome']  ?>
-                                    <span class="float-right badge badge-light round">
-                                        <?= $linha['quantidade'] ?>
-                                        <?= $linha['unidade'] ?>
-                                    </span> 
-                                    </a>
-                            <?php }?>
-                            </div>
+            <div class="card">
+                <article class="card-group-item">
+                    <div class="filter-content">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-primary">Milho <span class="float-right badge badge-light round">142 pés</span> </a>
+                            <a href="#" class="list-group-item">Café <span class="float-right badge badge-light round">3
+                                    pés</span> </a>
+                            <a href="#" class="list-group-item">Algodão <span class="float-right badge badge-light round">32 pés</span> </a>
+                            <a href="#" class="list-group-item">Cana <span class="float-right badge badge-light round">12 pés</span> </a>
                         </div>
-                    </article>
-                </div>
-            </aside>
+                    </div>
+                </article>
+            </div>
+        </aside>
+
 
             <aside class="col-sm-4">
                 <p>Quando Colher <i class="fa fa-pagelines" aria-hidden="true"></i></p>
@@ -346,7 +343,7 @@ include 'model/bucarDadosHome.php';
         <div class="card mb-3">
           <div class="card-header">
             <i class="fa fa-area-chart"></i>
-            Vendas x Compras
+            Vendas Culturas Agricolas
           </div>
 		  <!-- descobrir como inserir o gráfico à partir de um banco -->
           <div class="card-body">
@@ -373,13 +370,13 @@ include 'model/bucarDadosHome.php';
                     <canvas id="myBarChart" width="100" height="50"></canvas>
                   </div>
                   <div class="col-sm-4 text-center my-auto"><!-- descobrir como pegar o valor do banco -->
-                    <div class="h4 mb-0 text-primary">R$10,00</div>
+                    <div class="h4 mb-0 text-primary">R$500,00</div>
                     <div class="small text-muted">Venda Anual</div>
                     <hr>
-                    <div class="h4 mb-0 text-warning">R$18,474</div>
+                    <div class="h4 mb-0 text-warning">R$700,00</div>
                     <div class="small text-muted">Gasto Anual</div>
                     <hr>
-                    <div class="h4 mb-0 text-success">R$16,219</div>
+                    <div class="h4 mb-0 text-success">R$1.000,00</div>
                     <div class="small text-muted">Lucro Anual</div>
                   </div>
                 </div>
@@ -397,13 +394,13 @@ include 'model/bucarDadosHome.php';
             <div class="card mb-3">
               <div class="card-header">
                 <i class="fa fa-pie-chart"></i>
-                Representatividade dos vendedores
+                Produtos
               </div>
               <div class="card-body">
                 <canvas id="myPieChart" width="100%" height="100"></canvas>
               </div>
               <div class="card-footer small text-muted">
-                Mes x
+                Mes
               </div>
             </div>
 
@@ -437,7 +434,7 @@ include 'model/bucarDadosHome.php';
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>

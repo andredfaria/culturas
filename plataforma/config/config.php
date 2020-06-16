@@ -2,10 +2,10 @@
 
 # mysq_li Conexão com o banco de dados
 
-$host = "andrx.com.br";
-$user = "andrxc15_dev";
-$senha = "andrxc15_dev";
-$bd = "andrxc15_tai";
+$host = "localhost";
+$user = "root";
+$senha = "";
+$bd = "tai";
 
 $conexao = mysqli_connect($host, $user, $senha, $bd);
 
@@ -16,6 +16,4 @@ if(!$conexao){
 }
 
 # criar tabela que esta no script.sql
- $query = "CREATE TABLE ...";
-
  $criarTabelas = mysqli_query($conexao, $query);
