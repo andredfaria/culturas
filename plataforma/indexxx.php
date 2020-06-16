@@ -34,23 +34,11 @@
                 <article class="card-group-item">
                     <div class="filter-content">
                         <div class="list-group list-group-flush">
-<<<<<<< HEAD:aa/indexxx.php
                             <a href="#" class="list-group-item list-group-item-primary">Milho <span class="float-right badge badge-light round">142 pés</span> </a>
                             <a href="#" class="list-group-item">Café <span class="float-right badge badge-light round">3
                                     pés</span> </a>
                             <a href="#" class="list-group-item">Algodão <span class="float-right badge badge-light round">32 pés</span> </a>
                             <a href="#" class="list-group-item">Cana <span class="float-right badge badge-light round">12 pés</span> </a>
-=======
-                        <?php while ($linha = mysqli_fetch_array($consultaPlantio)) { ?>
-                            <a href="#" class="list-group-item">
-                                <?= $linha['nome']  ?>
-                                <span class="float-right badge badge-light round">
-                                    <?= $linha['quantidade'] ?>
-                                    <?= $linha['unidade'] ?>
-                                </span> 
-                                </a>
-                        <?php }?>
->>>>>>> 3619aa2559b27d86299eb034c3a7301b3e27663c:original/indexxx.php
                         </div>
                     </div>
                 </article>
