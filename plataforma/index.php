@@ -192,10 +192,12 @@ include 'model/bucarDadosHome.php';
                 <span class="input-group-btn">
                   <button class="btn btn-primary" type="button">
                     <i class="fa fa-search"></i>
-                  </button>
+                                   </button>
                 </span>
               </div>
             </form>
+          </li>
+          </li>
 			
           <li class="nav-item">
             <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
